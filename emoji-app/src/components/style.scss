@@ -90,3 +90,18 @@
         background: #f84747;
     }
 }
+
+// filter component
+.filter {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .select-tag {
+        margin: 10px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+}
