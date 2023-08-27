@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    border: 5px solid burlywood;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin: 100% 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.heading {
+    margin: 20px;
+}
+
+.input-section {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    border-radius: 20px;
+    border: 2px solid black;
+    /* padding: 5px; */
+}
+
+.task-input {
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    /* height: 20px; */
+    padding: 5px;
+    /* border-radius: 20px; */
+}
+
+.add-task-btn {
+    /* padding: 5px; */
+    background-color: chartreuse;
+    /* font-weight: bold; */
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.tasks-section {
+    margin: 20px;
+}
+
+.tasks {
+    margin-top: 20px;
+    /* overflow-y: scroll;
+    height: 250px; */
+}
+
+.tasks li {
+    /* font-size: large; */
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.tasks li span {
+    font-size: 20px;
+    color: red;
+    margin-right: 10px;
+}
+
+.tasks li button {
+    background-color: greenyellow;
+    padding: 5px;
+    cursor: pointer;
+}

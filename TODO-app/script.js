@@ -2,15 +2,27 @@ let input = document.getElementById("task-inp");
 let addBtn = document.getElementById("add-btn");
 let ul = document.getElementById("task-list")
 
-let taskArr = [];
-
 addBtn.addEventListener('click', () => {
     console.log("btn-clicked", input.value);
     let task = input.value;
     // taskArr.append(task);
-    taskArr.push(task);
-    mapTasks();
-    input.value = "";
+    if (task !== "") {
+        let li = document.createElement('li');
+        let span = document.createElement('span');
+        let button = document.createElement('button');
+        span.innerHTML = task;
+        button.innerHTML = "complete";
+        li.appendChild(span);
+        li.appendChild(button);
+
+        button.addEventListener('click', (e) => {
+            e.target.parentElement.remove();
+        })
+        ul.appendChild(li);
+        input.value = "";
+    } else {
+        alert("please add some task..")
+    }
 })
 
 function mapTasks() {
